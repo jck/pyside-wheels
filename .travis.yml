@@ -1,12 +1,14 @@
 cache:
   directories:
-  - $HOME/.cache/pip/
+    - $HOME/PySide-1.2.4/dist
 
 matrix:
   include:
-   - os: osx
-     osx_image: Xcode 8.3.3
-     language: generic
+    - os: osx
+      osx_image: Xcode 8.3.3
+      language: generic
+    - os: linux
+      language: python
 
 script: 
-   - echo test
+  - ./build_pyside_wheel.sh
