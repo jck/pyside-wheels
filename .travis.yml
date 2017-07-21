@@ -1,0 +1,12 @@
+cache:
+  directories:
+  - $HOME/.cache/pip/
+
+matrix:
+  include:
+   - os: osx
+     osx_image: Xcode 8.3.3
+     language: generic
+
+script: 
+   - echo test
